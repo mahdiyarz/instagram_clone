@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 
-import '../main/main_screen.dart';
+import '../res/app_screens.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: 'Instagram Clone',
-      home: MainScreen(),
+      initialRoute: AppNamedRoutes.splashScreen,
+      routes: appRoutes,
     );
   }
 }
