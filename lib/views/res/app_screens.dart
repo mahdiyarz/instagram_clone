@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../screens/add_post/add_post_screen.dart';
 import '../screens/splash/splash_screen.dart';
-import '../../views/screens/main/main_screen.dart';
+import '../screens/tab/tab_screen.dart';
 
 abstract class AppNamedRoutes {
   static const splashScreen = '/splash-screen';
@@ -16,6 +16,6 @@ abstract class AppNamedRoutes {
 
 Map<String, Widget Function(BuildContext)> appRoutes = {
   AppNamedRoutes.splashScreen: (context) => const SplashScreen(),
-  AppNamedRoutes.mainScreen: (context) => const MainScreen(),
+  AppNamedRoutes.mainScreen: (context) => const TabScreen(),
   AppNamedRoutes.addPostScreen: (context) => const AddPostScreen(),
 };
